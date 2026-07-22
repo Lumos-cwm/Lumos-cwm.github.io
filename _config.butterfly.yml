@@ -182,7 +182,7 @@ index_layout: 3
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 1
   # If you set method to 2 or 3, the length need to config
   length: 500
 
@@ -453,7 +453,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use:
+  use: 
   per_page: true
   hide_scrollbar: false
 

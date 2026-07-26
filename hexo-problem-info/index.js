@@ -46,7 +46,10 @@ function parseInfoBlocks(markdown, post) {
                 source: info.source ? String(info.source) : '',
                 difficulty: info.difficulty ? String(info.difficulty) : '',
                 url: info.url ? String(info.url) : '',
-                tags: Array.isArray(info.tags) ? info.tags.map(String) : [],
+                tags: Array.isArray(info.tags) ? info.tags.map(String) : [], 
+                    /*
+                        可能出现的问题是，如果只有一个 tag 并且不是数组形式，那会被解析成字符串或其他东西
+                    */
                 postTitle: String(post.title || ''),
                 postPath: String(post.path || '')
             })

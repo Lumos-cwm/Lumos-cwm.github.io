@@ -154,6 +154,7 @@ hexo.extend.filter.register('before_generate', function () {
     }
 })
 
+// 插入题目锚点
 hexo.extend.filter.register('before_post_render', function (data) {
     if (typeof data.content !== 'string') {
         return data

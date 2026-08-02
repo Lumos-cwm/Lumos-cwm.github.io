@@ -119,3 +119,8 @@ search:
   field: post
   content: true
   format: html
+
+problem-info:
+  enable: true
+  path: 'problem'
+  icon: 'fas fa-list'
